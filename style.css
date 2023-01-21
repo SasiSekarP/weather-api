@@ -30,6 +30,7 @@ body{
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
     background-color: white;
+    position: relative;
 }
 
 .LocationInput{
@@ -102,6 +103,22 @@ img{
 }
 .discription{
     margin-left: 5px;
+}
+
+.hiddenMessage{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    bottom: 25px;
+    left: 25px;
+    border-radius: 5px;
+    display: none;
+}
+
+.btn:hover .hiddenMessage{
+    display: block;
 }
 
 @media screen and (max-width: 376px) {
