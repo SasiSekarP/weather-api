@@ -58,7 +58,7 @@ getLocationContainerEl.addEventListener('submit', (e) => {
    displayContainerEl.style.display = 'flex'
 
    let locationOfArea = LocationInputEl.value;
-   fetch(`http://api.weatherapi.com/v1/current.json?key=84b4edba301243b38c1155714232001&q=${locationOfArea}`).then(response => response.json()).then(data => {
+   fetch(`https://api.weatherapi.com/v1/current.json?key=84b4edba301243b38c1155714232001&q=${locationOfArea}`).then(response => response.json()).then(data => {
 
       // console.log(data)
 
