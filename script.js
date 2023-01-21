@@ -60,6 +60,8 @@ getLocationContainerEl.addEventListener('submit', (e) => {
    let locationOfArea = LocationInputEl.value;
    fetch(`http://api.weatherapi.com/v1/current.json?key=84b4edba301243b38c1155714232001&q=${locationOfArea}`).then(response => response.json()).then(data => {
 
+      // console.log(data)
+
    temperatureEl.innerText = data.current.temp_c;
    textDiscriptionEl.innerText = data.current.condition.text;
    locationEl.innerText = data.location.name;
