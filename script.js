@@ -64,6 +64,7 @@ getLocationContainerEl.addEventListener('submit', (e) => {
 
    temperatureEl.innerText = data.current.temp_c;
    textDiscriptionEl.innerText = data.current.condition.text;
+   iconEl.src = `https:${data.current.condition.icon}`
    locationEl.innerText = data.location.name;
    DatacollectedTimeEl.innerText = `: ${data.location.localtime}`;
    windDirectionEl.innerText = `: ${data.current.wind_dir}`;
