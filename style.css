@@ -1,0 +1,117 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-image: url('https://media.istockphoto.com/id/1368994342/photo/grateful.jpg?s=612x612&w=0&k=20&c=HwNOIylg7cA8aI5qHOU2r_1s-we2w0PuMbwxu7zdn-A=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.locationTag{
+    padding-bottom: 1rem;
+}
+
+.getLocationContainer{
+    width: 200px;
+    margin-top: 5rem;
+}
+
+.btn{
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background-color: white;
+}
+
+.LocationInput{
+    height: 26px;
+    border: 0px;
+    outline: none;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.getLocationContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.mainContainer{
+    width: 300px;
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+    padding: 1rem;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 5px 0px;
+}
+
+.left{
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100px;
+}
+
+.row2{
+    font-size: 2rem;
+}
+
+.leftData,.rightData{
+    flex: 1;
+}
+.displayContainer{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.row1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.rightData{
+    display: flex;
+}
+.discription{
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 376px) {
+    .getLocationContainer{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .getLocationContainer{
+        margin-top: 3rem;
+    }
+}
