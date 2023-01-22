@@ -9,15 +9,13 @@ body{
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
-}
-
-.locationTag{
-    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .getLocationContainer{
     width: 200px;
-    margin-top: 5rem;
 }
 
 .btn{
@@ -48,7 +46,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
 }
 
 .mainContainer{
@@ -92,7 +89,6 @@ img{
     display: none;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
 }
 .row1{
     display: flex;
@@ -122,16 +118,4 @@ img{
 
 .btn:hover .hiddenMessage{
     display: block;
-}
-
-@media screen and (max-width: 376px) {
-    .getLocationContainer{
-        margin-top: 2rem;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    .getLocationContainer{
-        margin-top: 3rem;
-    }
 }
